@@ -1,0 +1,13 @@
+{
+  "name": "content-tools",
+  "description": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests"
+  ],
+  "dependencies": {
+    "ContentTools": "^1.2.5"
+  }
+}
