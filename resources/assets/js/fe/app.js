@@ -54,9 +54,11 @@ window.addEventListener('load', function () {
             }
         };
 
+        payload.append('_method', 'PUT');
+
         xhr = new XMLHttpRequest();
         xhr.addEventListener('readystatechange', onStateChange);
-        xhr.open('PUT', getCurrentUrl());
+        xhr.open('POST', getCurrentUrl());
         xhr.setRequestHeader('X-CSRF-TOKEN', getCsrfToken());
         xhr.send(payload);
     });
